@@ -11,10 +11,24 @@ class TV:
     def turnOn(self):
         self.on = True
 
-    # a method that return False when TV is off
+    # a method that returns False when TV is off
     def turnOff(self):
         self.on = False
     
-    # a method that returns the channel
+    # a method that returns the current channel
     def getChannel(self):
         return self.channel
+    
+    # a method that sets new channel
+
+    # a method that returns the current volume
+    
+    # a method that sets new volume level
+
+    # a method that increments channel number by 1
+
+    # a method the decrements channel number by 1
+
+    # a method that increments volume level by 1
+
+    # a method the decrements volume level by 1
