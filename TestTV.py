@@ -24,7 +24,7 @@ def TestTV():
     tv2.setVolume(2)
 
 
-    TestTV = 'TEST TV'
+    TestTV = 'TV sets'
 
     # Place two objects into TestTV layout
     TestTV_layout = [
