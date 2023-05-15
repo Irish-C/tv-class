@@ -21,7 +21,8 @@ class TV:
     
     # a method that sets new channel
     def setChannel(self, channel):
-        pass
+        if self.on and (1 <= channel <= 120): # sets channel iff TV is turned on
+            self.channel = channel
 
     # a method that returns the current volume
     def getVolume(self):
