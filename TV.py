@@ -6,6 +6,7 @@ class TV:
         self.volumeLevel = 1
         self.on = False
     
+
     # function that returns True when TV is on
     def turnOn(self):
         self.on = True
@@ -13,3 +14,7 @@ class TV:
     # function that return False when TV is off
     def turnOff(self):
         self.on = False
+    
+    # function that returns the channel
+    def getChannel(self):
+        return self.channel
