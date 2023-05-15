@@ -26,11 +26,12 @@ class TV:
 
     # a method that returns the current volume
     def getVolume(self):
-        pass
+        return self.volumeLevel
     
     # a method that sets new volume level
-    def setVolume(self):
-        pass
+    def setVolume(self, volume):
+        if self.on and (1 <= volume <= 7):
+            self.volumeLevel = volume
 
     # a method that increments channel number by 1
     def channelUp(self):
