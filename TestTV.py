@@ -1,5 +1,5 @@
 # Test Driver Program
-# CR
+# 
 
 # import modules
 from TV import TV
@@ -9,7 +9,7 @@ import PySimpleGUI as sg
 # Define TestTV
 def TestTV():
     # Insert theme
-    sg.theme('LightBrown3')
+    sg.theme('LightBlue')
 
     # Create two objects
     tv1 = TV()
@@ -27,12 +27,13 @@ def TestTV():
 
     # Place two objects into TestTV layout
     TestTV_layout = [
-        [sg.Frame('', [[sg.Text(f"TV1's channel is {tv1.getChannel()} and volume level is {tv1.getVolume()}.", size=(30,1))]], border_width=3)],
-        [sg.Frame('', [[sg.Text(f"TV2's channel is {tv2.getChannel()} and volume level is {tv2.getVolume()}.",size=(30,1))]], border_width=3)]
+        [sg.Text('TEST TV', font=('8514oem', 16))],
+        [sg.Frame('', [[sg.Text(f"TV1's channel is {tv1.getChannel()} and volume level is {tv1.getVolume()}.", size=(35,1), font=('Elephant',12))]], border_width=3)],
+        [sg.Frame('', [[sg.Text(f"TV2's channel is {tv2.getChannel()} and volume level is {tv2.getVolume()}.", size=(35,1), font=('Elephant',12))]], border_width=3)]
     ]
 
     # Create TestTV window
-    TestTV_window = sg.Window('Test Driver Program', TestTV_layout)
+    TestTV_window = sg.Window('Test Driver Program', TestTV_layout, size=(400, 150))
     
     # Read and close window
     TestTV_window.read()
