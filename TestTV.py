@@ -8,6 +8,8 @@ import PySimpleGUI as sg
 
 # Define TestTV
 def TestTV():
+    # Insert theme
+    sg.theme('DarkTeal4')
 
     # Create two objects
     tv1 = TV()
@@ -24,8 +26,8 @@ def TestTV():
     tv2.setVolume(2)
 
     TestTV_layout = [
-        [sg.Frame('TV1', [[sg.Text(f"TV1's channel is {tv1.getChannel()} and volume level is {tv1.getVolume()}")]])],
-        [sg.Frame('TV2', [[sg.Text(f"TV2's channel is {tv2.getChannel()} and volume level is {tv2.getVolume()}")]])]
+        [sg.Frame('TV1', [[sg.Text(f"TV1's channel is {tv1.getChannel()} and volume level is {tv1.getVolume()}.", size=(30,1))]])],
+        [sg.Frame('TV2', [[sg.Text(f"TV2's channel is {tv2.getChannel()} and volume level is {tv2.getVolume()}.",size=(30,1))]])]
     ]
 
     # Create TestTV window
