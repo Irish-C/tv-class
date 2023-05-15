@@ -35,18 +35,20 @@ class TV:
 
     # a method that increments channel number by 1
     def channelUp(self):
-        if self.on and self.channel < 120:      # only increments iff TV is on and channel number is less than 120
+        if self.on and self.channel < 120:          # only increments iff TV is on and channel number is less than 120 (max value)
             self.channel += 1
 
     # a method the decrements channel number by 1
     def channelDown(self):
-        if self.on and self.channel > 1         #monly decrements iff TV is on and channel number is greater than 1
+        if self.on and self.channel > 1:             # only decrements iff TV is on and channel number is greater than 1 (min value)
             self.channel -= 1
 
     # a method that increments volume level by 1
     def volumeUp(self):
-        pass
+        if self.on and self.volumeLevel < 7:         # only increments iff TV is on and volume level is less than 7 (max value)
+            self.volumeLevel += 1
 
     # a method the decrements volume level by 1
     def volumeDown(self):
-        pass
+        if self.on and self.volumeLevel > 1:         # only decrements iff TV is on and volume level is greater than 1 (min value)
+            self.volumeLevel -= 1
