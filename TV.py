@@ -20,15 +20,29 @@ class TV:
         return self.channel
     
     # a method that sets new channel
+    def setChannel(self, channel):
+        pass
 
     # a method that returns the current volume
+    def getVolume(self):
+        pass
     
     # a method that sets new volume level
+    def setVolume(self):
+        pass
 
     # a method that increments channel number by 1
+    def channelUp(self):
+        pass
 
     # a method the decrements channel number by 1
+    def channelDown(self):
+        pass
 
     # a method that increments volume level by 1
+    def volumeUp(self):
+        pass
 
     # a method the decrements volume level by 1
+    def volumeDown(self):
+        pass
